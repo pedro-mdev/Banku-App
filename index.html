@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Use our monthly budget calculator to manage your finances effectively. Enter your income and expenses, and track your monthly budget with ease. Start saving today!">
+    <meta name="keywords" content="monthly budget calculator, finance tracking, budgeting tool, personal finance, expense management, saving calculator">
+    <!--Social Media Graph Meta Tags-->
+    <meta property="og:title" content="Monthly Budget Calculator - Calculate and Track Your Finances">
+    <meta property="og:description" content="Use our monthly budget calculator to manage your finances effectively. Enter your income and expenses, and track your monthly budget with ease. Start saving today!">
+    <meta property="og:image" content="https://example.com/budget-calculator.jpg"> <!-- URL to an image representing your budget calculator -->
+    <meta property="og:url" content="https://example.com/monthly-budget-calculator">                                                                                               
+    <title>Banku - Calculate and Track Your Finances</title>
+    <!-- CSS LINK-->
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="main-container-wrapper">
+        <div class="nav-wrapper-grid">
+            <div class="top-nav-title"><p>Banku.</p></div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <div class="nav-link-container">
+                    <li class="nav-item">
+                        <a href="#banku-info" class="nav-link">What's Banku?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Calculator" class="nav-link nav-link-attention-button">Calculator</a>
+                    </li>
+                </div>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+        <div class="hero-container-grid ">
+            <div class="hero-image-container"> 
+                <img class="hero-image-01" src="/assets/imgs/img1-hero-header.png" alt="Illustration Image of a man next to an ascending graph"> 
+            </div>
+            <div class="hero-text-container">
+                <p class="hero-text">Take Control of your finances with Banku.</p>
+                <a href="#" class="calculator-button">Calculator</a>
+            </div>
+        </div>
+
+        <section class="section-2-wb " id="banku-info">
+            <p class="section-title">What's Banku?</p>
+            <div class="banku-info-grid">
+                <img class="img-info1" src="/assets/imgs/img2-hero-wb.png" alt=" An Illustration of a man holding a calculator">
+                <p class="text-info1">Banksy is an online budget calculator to help you manage your finances better. By knowing your daily
+                    budget you know exactly how much to spend and how
+                    much you can save per month.</p>
+            <img class="img-info2" src="/assets/imgs/img3-hero-wb.png" alt=" An Illustration of a man putting money in his piggy bank">
+                <p class="text-info2">According to a survey by the Money and Pensions
+                    Service (MaPs), around a quarter of UK adults
+                    (11.5 million people) have less than £100 in their savings
+                    account, with one in six people having no savings at all.</p>
+            </div>
+        </section>
+
+        <section class="newsletter-section animated-div">
+            <p class="newsletter-title">Want to stay up to date?</p>
+            <p class="newsletter-info">Sign up to our news letter and
+                get notified of updates and services.</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Enter your email" required>
+              <a href="#" class="newsletter-signup-button" type="submit">Sign Up</a>
+            </form>
+          </section>
+
+          <section id="Calculator" class="calculator-section">
+                <p class="calculator-section-title">Calculator</p>
+                <div class="calculator-container-grid">
+                    <div class="income-form">
+                      <h2>Income</h2>
+                      <input type="text" class="income-name" id="income-name" placeholder="Income Name">
+                      <input type="number" class="income-amount" id="income-amount" placeholder="Income Amount">
+                      <a id="add-income-btn"><img class="add-income-btn" src="/assets/imgs/icons8-plus-250.png" alt="plus sign"></a>
+                      <div class="income-list">
+                        <h2>Income List</h2>
+                        <ul id="incomes"></ul>
+                      </div>
+                    </div>
+
+                    <div class="expense-form">
+                      <h2>Expenses</h2>
+                      <input type="text" class="expense-name" id="expense-name" placeholder="Expense Name">
+                      <input type="number" class="expense-amount" id="expense-amount" placeholder="Expense Amount">
+                      <a id="add-expense-btn"><img class="add-expense-btn" src="/assets/imgs/icons8-plus-250.png" alt="plus sign"></a>
+                      <div class="expense-list">
+                        <h2>Expense List</h2>
+                        <ul id="expenses"></ul>
+                      </div>
+                    </div>
+                </div>
+                    <div class="budget-result">
+                      <h2>Budget Summary</h2>
+                        <div class="result-info">
+                            <p>Monthly Budget: <span id="monthly-budget">0</span></p>
+                            <p>Daily Budget: <span id="daily-budget">0</span></p>
+                      </div>
+                    </div>
+                  
+          </section>
+          <footer>
+            <div class="footer-container">
+                <p class="footer-section-title">Banku.</p>
+                <div class="bottom-footer-text">
+                    <p> Banku ltd. All rights reserverd 2023 ©</p>
+                </div>
+
+            </div>
+          </footer>
+    </div>
+
+    <!-- JS LINK -->
+    <script src="/scripts.js"></script>
+</body>
+</html>
