@@ -97,7 +97,7 @@ function renderIncomes() {
     const listItem = document.createElement('li');
     listItem.textContent = `${income.name}: £${income.amount.toFixed(2)}`;
     const removeBtn = document.createElement('img');
-    removeBtn.src = '/assets/imgs/icons8-minus-sign-100.png';
+    removeBtn.src = 'assets/imgs/icons8-minus-sign-100.png';
     removeBtn.alt = 'Remove';
     removeBtn.addEventListener('click', () => removeIncome(index));
 
@@ -120,7 +120,7 @@ function renderExpenses() {
     const listItem = document.createElement('li');
     listItem.textContent = `${expense.name}: £${expense.amount.toFixed(2)}`;
     const removeBtn = document.createElement('img');
-    removeBtn.src = '/assets/imgs/icons8-minus-sign-100.png';
+    removeBtn.src = 'assets/imgs/icons8-minus-sign-100.png';
     removeBtn.alt = 'Remove';
 
     // CSS styles to the image button
